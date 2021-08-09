@@ -9,6 +9,8 @@ require('telescope').setup{
       '--line-number',
       '--column',
       '--smart-case',
+      '--hidden',
+      '!.gitignore'
     },
     prompt_prefix = "> ",
     selection_caret = "> ",
@@ -26,7 +28,7 @@ require('telescope').setup{
       },
     },
     file_sorter =  require'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = {'node_modules'},
+    file_ignore_patterns = {'node_modules', 'autoload'},
     generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
     winblend = 0,
     border = {},
@@ -41,6 +43,9 @@ require('telescope').setup{
 
     -- Developer configurations: Not meant for general override
     buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
-  }
+  },
 }
 EOF
+
+map <leader>ff :Telescope find_files theme=get_dropdown<CR>
+

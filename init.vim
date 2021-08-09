@@ -1,8 +1,10 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/telescope.vim
+source $HOME/.config/nvim/vim-plug/telescope.vim
+source $HOME/.config/nvim/vim-plug/NERDTree.vim
 source $HOME/.config/nvim/vim-plug/lsp.vim
 
-map <leader>t :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen=1
-
-map <leader>ff :Telescope find_files<CR>
+filetype plugin indent on
+set number
+" set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
+set autoindent
+set incsearch ignorecase smartcase hlsearch
