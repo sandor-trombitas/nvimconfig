@@ -2,6 +2,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/NERDTree.vim
 source $HOME/.config/nvim/vim-plug/lsp.vim
+source $HOME/.config/nvim/vim-plug/airline.vim
 
 filetype plugin indent on
 set number
