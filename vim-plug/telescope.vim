@@ -47,5 +47,3 @@ require('telescope').setup{
 }
 EOF
 
-map <leader>ff :Telescope find_files theme=get_dropdown<CR>
-
