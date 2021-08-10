@@ -7,7 +7,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-
+    
+    " Themes
+    Plug 'joshdick/onedark.vim'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
